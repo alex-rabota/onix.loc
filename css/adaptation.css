@@ -1,0 +1,718 @@
+@media(max-width:1220px) {
+    .content-title-black, .content-title-normal {
+        font-size: 35px;
+    }
+
+    .slick-dots li:nth-child(1) {
+        left: 190px;
+        top: 240px;
+    }
+
+    .slick-dots li:nth-child(2) {
+        left: 310px;
+        top: 210px;
+    }
+
+    .slick-dots li:nth-child(3) {
+        left: 390px;
+        top: 240px;
+    }
+
+    .slick-dots li:nth-child(4) {
+        left: 460px;
+        top: 210px;
+    }
+
+    .materials-text-content {
+        min-height: 135px;
+    }
+
+    .append-arrows {
+        bottom: 50px;
+    }
+
+    .work-content-img img {
+        width: 100%;
+    }
+
+    .btn-yellow {
+        white-space: nowrap;
+    }
+
+    .work-content-text {
+        padding: 50px 70px 50px 119px;
+    }
+
+    .design-block {
+        max-height: 306px;
+    }
+
+    .text-form {
+        display: none;
+    }
+
+    .testimonals-content-text {
+        padding-left: 119px;
+    }
+
+    .testimonals-massage {
+        font-size: 14px;
+        min-height: 255px;
+    }
+
+    .wrapper-block {
+        width: 90%;
+    }
+
+    .modal-window-msg-calc {
+        width: 100%;
+    }
+
+    .calculate-dop-price {
+        width: 110px;
+    }
+
+    .sep {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+    .slick-dots li:nth-child(1) {
+        left: 170px;
+    }
+
+    .slick-dots li:nth-child(2) {
+        left: 290px;
+    }
+
+    .slick-dots li:nth-child(3) {
+        left: 370px;
+    }
+
+    .slick-dots li:nth-child(4) {
+        left: 440px;
+    }
+
+    .materials-text {
+        padding-left: 100px;
+    }
+
+    .materials-text-content {
+        min-height: 152px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .design-delivery .design-block-text {
+        margin-top: 9px;
+    }
+
+    .guarantee-content span {
+        margin-bottom: 60px;
+    }
+
+    .calculate-dop-edge-img img {
+        width: 180px;
+    }
+
+    .result-form-input > div {
+        width: calc(50% - 10px);
+    }
+
+    .result-dop-content > div {
+        width: calc(100% - 10px);
+    }
+}
+
+@media(max-width:991px) {
+    .calculate-info {
+        margin-bottom: 30px;
+    }
+
+    .calculate-img {
+        margin-bottom: 30px;
+    }
+
+    .point-three {
+        left: 70%;
+    }
+
+    .materials-content, .work-content-block, .testimonals-content-block {
+        flex-direction: column;
+    }
+
+    .materials-img, .work-content-img, .testimonals-content-img {
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    #material-slider, .work-content-text, .testimonals-content-text {
+        width: 90%;
+        margin-top: -100px;
+        z-index: 1;
+        background: #fff;
+    }
+
+    .materials-text, .work-content-text, .testimonals-content-text {
+        padding: 50px 50px 90px 50px;
+    }
+
+    .testimonals-massage {
+        min-height: 153px;
+    }
+
+    .materials-text-content {
+        min-height: 76px;
+    }
+
+    .append-arrows {
+        z-index: 2;
+        right: 90px;
+    }
+
+    .append-arrows-work {
+        width: 100%;
+        position: relative;
+        top: -75px;
+    }
+
+    .append-arrows-testimonals {
+        width: 100%;
+        right: 0;
+        bottom: 35px;
+        justify-content: center;
+    }
+
+    .work-content-text {
+        text-align: center;
+    }
+
+    .slick-dots li:nth-child(1) {
+        left: 30%;
+        top: 35%;
+    }
+
+    .slick-dots li:nth-child(2) {
+        left: 40%;
+        top: 31%;
+    }
+
+    .slick-dots li:nth-child(3) {
+        left: 50%;
+        top: 36%;
+    }
+
+    .slick-dots li:nth-child(4) {
+        left: 65%;
+        top: 30%;
+    }
+
+    .slick-dots li:before {
+        left: -40px;
+        top: 50px;
+    }
+
+    .design-free-design, .design-delivery, .design-guarantee, .reason-content, .reason-img, .guarantee-content {
+        margin-bottom: 30px;
+    }
+
+    .design-free-zamer {
+        background-position-y: -260px;
+    }
+
+    .guarantee-img {
+        justify-content: center;
+    }
+
+    .feedback-content .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .footer-menu li {
+        width: 49%;
+    }
+
+    .studio {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .design-delivery .design-block-text {
+        margin-top: 0;
+    }
+
+    .guarantee-content span {
+        margin-bottom: 0;
+    }
+
+    .type-table-block {
+        margin-bottom: 30px;
+    }
+
+    .table-size-corner {
+        max-width: 100%;
+    }
+
+    .table-size-corner .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .calculate-dop-edge-img img {
+        width: 170px;
+    }
+
+    .calculate-result-params-dop > h3 {
+        margin-top: 30px;
+    }
+
+    .table-size-mm-content, .table-size-none {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .slick-dots li:nth-child(1) {
+        left: 230px;
+        top: 260px;
+    }
+
+    .slick-dots li:nth-child(2) {
+        left: 310px;
+        top: 220px;
+    }
+
+    .slick-dots li:nth-child(3) {
+        left: 410px;
+        top: 250px;
+    }
+
+    .slick-dots li:nth-child(4) {
+        left: 500px;
+    }
+
+    .slick-dots li:before {
+        left: -40px;
+        top: 50px;
+    }
+
+    .calculate-step-link-block {
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+
+    .calculate-step-tab {
+        margin-bottom: 30px;
+    }
+
+    .table-stone-tab {
+        border-bottom: none;
+        flex-wrap: wrap;
+    }
+
+    .stone-tab-block {
+        width: 25%;
+    }
+
+    .stone-tab-block a.active {
+        border-bottom: 2px solid #ffc533;
+    }
+
+    .calculate-dop {
+        width: 100%;
+    }
+
+    .design-free-zamer {
+        background-position-y: bottom;
+    }
+
+    .testimonals-title, .reason-title, .work-title {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:580px) {
+    .content-title-black, .content-title-normal, .calculate-step-title {
+        display: inline !important;
+    }
+
+    .slick-dots li:nth-child(1) {
+        left: 30%;
+        top: 27%;
+    }
+
+    .slick-dots li:nth-child(2) {
+        left: 43%;
+        top: 24%;
+    }
+
+    .slick-dots li:nth-child(3) {
+        left: 60%;
+        top: 26%;
+    }
+
+    .slick-dots li:nth-child(4) {
+        left: 75%;
+        top: 22%;
+    }
+
+    .materials-text-content {
+        min-height: 133px;
+    }
+
+    .testimonals-massage {
+        min-height: 272px;
+    }
+
+    .footer-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copy-name, .studio {
+        text-align: center;
+    }
+
+    .tel-number {
+        font-size: 20px;
+    }
+
+    .slick-dots li:hover:before {
+        display: none;
+    }
+}
+
+@media(max-width:480px) {
+    .content-title-black, .content-title-normal {
+        font-size: 30px;
+    }
+
+    .modal-window-msg {
+        width: 80%;
+    }
+
+    .point-border:hover .point-hidden-text {
+        display: none;
+    }
+
+    #scroller {
+        width: 40px;
+        height: 40px;
+        line-height: 39px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    #modal-window-calc {
+        z-index: 20;
+    }
+
+    .wrapper-block, .calculate-content {
+        width: 100%;
+    }
+
+    .modal-window-msg-calc {
+        width: 100%;
+        height: 101%;
+        padding: 30px 0;
+    }
+
+    .wrapper-block .modal-window-close {
+        right: 10px;
+        top: -15px;
+        background: #fff;
+    }
+
+    .calculate-step-link-block {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .calculate-step-tab {
+        margin-bottom: 15px;
+    }
+
+    .table-size-mm-content input {
+        width: 90px;
+    }
+
+    .stone-tab-block {
+        width: 33%;
+    }
+
+    .calculate-dop-edge-img img {
+        width: 150px;
+    }
+
+    .result-form-input > div {
+        width: 100%;
+    }
+
+    .table-stone-tab {
+        justify-content: center;
+    }
+
+    .calculate-dop-price {
+        width: 120px;
+    }
+
+    .materials-text, .work-content-text, .testimonals-content-text {
+        padding: 20px 20px 60px;
+    }
+
+    .materials-text-content {
+        min-height: 153px;
+        font-size: 14px;
+    }
+
+    .append-arrows {
+        bottom: 30px;
+    }
+
+    .yellow-border-img picture:after {
+        border: 10px solid #ffc533;
+        top: -20px;
+        left: 30px;
+    }
+
+    .yellow-border-img {
+        right: 25px;
+        top: 25px;
+        width: calc(100% - 25px);
+    }
+
+    .slick-dots li:nth-child(1) {
+        left: 28%;
+        top: 22%;
+    }
+
+    .slick-dots li:nth-child(2) {
+        top: 20%;
+    }
+
+    .slick-dots li:nth-child(3) {
+        top: 23%;
+    }
+
+    .slick-dots li:nth-child(4) {
+        top: 19%;
+    }
+
+    .work-content-title {
+        font-size: 24px;
+    }
+
+    .work-content-text p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .append-arrows-work {
+        top: -62px;
+    }
+
+    .mobil-none {
+        display: none;
+    }
+
+    .append-arrows-work {
+        left: -5px;
+    }
+
+    .content-title-black, .content-title-normal {
+        font-size: 24px;
+    }
+
+    .testimonals-person-img {
+        margin-right: 10px;
+        width: 70px;
+    }
+
+    .materials-text-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .append-arrows-testimonals {
+        bottom: 27px;
+    }
+
+    .testimonals-massage {
+        min-height: 357px;
+    }
+
+    .reason-title {
+        margin-bottom: 10px;
+    }
+
+    .reason-content ol li span {
+        width: calc(100% - 40px);
+    }
+
+    .content-title-black:before {
+        width: 20px;
+        height: 16px;
+        left: -9px;
+    }
+
+    .design-block-text h3, .testimonals-content-title {
+        font-size: 22px;
+    }
+
+    .reason-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guarantee-content h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .guarantee-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .guarantee-content span {
+        margin-top: 20px;
+    }
+
+    .feedback-content .col-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .feedback-content span {
+        margin-bottom: 30px;
+    }
+
+    .feedback-link {
+        padding: 20px;
+    }
+
+    .feedback-link h3 {
+        font-size: 24px;
+    }
+
+    .feedback-link p {
+        font-size: 14px;
+    }
+
+    .calculate-info p, .calculate-info ol {
+        font-size: 16px;
+    }
+
+    #material-slider, .work-content-text, .testimonals-content-text {
+        margin-top: -60px;
+    }
+
+    .footer-menu a {
+        font-size: 14px;
+    }
+
+    .wrapper-block {
+        height: 100%;
+    }
+
+    .work {
+        padding-bottom: 30px;
+    }
+
+    .materials-text, .work-content-text, .testimonals-content-text, .feedback-link {
+        border: 10px solid #ffc533;
+    }
+
+    .work-content-text .btn-yellow {
+        margin: 10px 0;
+    }
+
+    .btn-calculate-step {
+        margin-top: 0;
+    }
+
+    .tabs-stone-content {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:340px) {
+    .point-one, .point-three {
+        top: 130px;
+    }
+
+    .append-dots {
+        display: none;
+    }
+
+    .materials-text-content {
+        min-height: 165px;
+        font-size: 13px;
+    }
+
+    .work-content-text, .testimonals-content-text {
+        padding: 10px 10px 60px;
+    }
+
+    .work-content {
+        position: relative;
+    }
+
+    .append-arrows-work {
+        top: auto;
+        bottom: 30px;
+        position: absolute;
+    }
+
+    .service-title, .reason-title {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .testimonals-massage {
+        min-height: 397px;
+    }
+
+    .reason-content ol li {
+        font-size: 14px;
+    }
+
+    .stone-tab-block {
+        width: 50%;
+    }
+
+    .guarantee {
+        padding: 40px 0 0;
+    }
+
+    .feedback-contact-text a {
+        font-size: 20px;
+    }
+
+    .calculate-step-link {
+        margin: 0 10px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .calculate-step-tab {
+        margin-bottom: 10px;
+    }
+
+    .calculate-dop-name, .calculate-dop-price {
+        font-size: 14px;
+    }
+}

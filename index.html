@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Оникс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <style>*{padding:0;margin:0;box-sizing:border-box;outline:none}html,body{font-size:16px;font-family:'Roboto',sans-serif;color:#000;-webkit-tap-highlight-color: transparent;}h1{font-size:34px}h2{font-size:32px}h3{font-size:28px}h4{font-size:24px}h5{font-size:20px}h6{font-size:17px}a{color:#ffc533;text-decoration:none;transition:.2s linear}a:hover{color:#000;text-decoration:none;}.text-yellow {color: #ffc533;}.btn-yellow {background: #ffc533;color: #fff;font-weight: bold;font-size: 18px;padding: 13px 50px;border-radius: 50px;display: inline-block;}.btn-yellow:hover {color: #fff;box-shadow: 0 0 25px #ffc5338f;}header {background: url(img/header-bg.jpg) center;background-size: cover;height: 100vh;position: relative;}.header-top {padding: 30px 0 120px;position: absolute;width: 100%;}.header-content {position: absolute;width: 100%;top: 23%;}.header-point, .header-btn {position: absolute;width: 100%;bottom: 14%;}.header-tel {display: flex;flex-direction: column;align-items: flex-end;}.header-logo {max-width: 140px;}.tel-number {font-weight: bold;font-size: 24px;margin-bottom: 5px;}.tel-number:hover {color: #fff;}.tel-number-icon {display: none;font-size: 22px;}.tel-text {font-weight: bold;font-size: 18px;color: #000;}.tel-text:hover {color: #ffc533;}.header-title {color: #fff;font-weight: bold;font-size: 46px;margin-bottom: 30px;}.content-title-yellow {color: #ffc533;font-weight: bold;font-size: 42px;margin-bottom: 30px;}.header-text {font-size: 24px;line-height: 1.5em;margin-bottom: 30px;color: #fff;}.header-text .text-yellow {font-weight: bold;}.header-top-centre {align-items: center;}.scroll button.scroll_down {opacity: 0;}button.scroll_down {position: absolute;transition: .8s;opacity: 1;right: 0;height: 50px;width: 30px;bottom: 40px;background-color: transparent;border: 2px solid #ababab;border-radius: 20px;cursor: pointer;outline: none;z-index: 3;}button.scroll_down:before {position: absolute;top: 10px;left: 50%;content: '';border-radius: 3px;width: 6px;height: 6px;margin-left: -3px;background-color: #ababab;-webkit-animation: scroll_down_btn-animation 2s infinite;animation: scroll_down_btn-animation 2s infinite;box-sizing: border-box;}@keyframes scroll_down_btn-animation {0% {transform: translate(0, 0);opacity: 0;}40% {opacity: 1;}80% {transform: translate(0, 20px);opacity: 0;}100% {opacity: 0;}}@-webkit-keyframes scroll_down_btn-animation {0% {-webkit-transform: translate(0, 0);transform: translate(0, 0);opacity: 0;}40% {opacity: 1;}80% {-webkit-transform: translate(0, 20px);transform: translate(0, 20px);opacity: 0;}100% {opacity: 0;}}.scroll-btn-block {position: relative;}.scroll-btn-text {position: absolute;right: -20px;color: #ababab;transform: rotate(90deg);}.header-btn {margin-top: 20px;}.menu-btn-block {display: flex;justify-content: flex-end;}.menu-btn {display: flex;width: 25px;height: 20px;position: relative;background: none;border: none;cursor: pointer;}.menu-btn.active {z-index: 10;}.menu-btn span, .menu-btn span:before, .menu-btn span:after {width: 25px;height: 3px;background: #ffc533;display: inline-block;border-radius: 5px;}.menu-btn span:before, .menu-btn span:after {content: "";position: absolute;transition: 0.2s linear;}.menu-btn span:before {left: 0;transform: translateY(-8px);}.menu-btn span:after {left: 0;transform: translateY(8px);}.menu-btn.active span {background: 0 0;}.menu-btn.active span:before {transform: translateY(0) rotate(-45deg);top: 10px;background: #fff;}.menu-btn.active span:after {transform: translateY(0) rotate(-135deg);top: 10px;background: #fff;}.header-point-block {position: relative;padding: 80px 0;margin-top: 80px;}.point-border {background: transparent;border: 3px solid #ffc533;width: 30px;height: 30px;border-radius: 50%;display: flex;justify-content: center;align-items: center;cursor: pointer;position: absolute;}.point-white {background: #fff;width: 12px;height: 12px;border-radius: 50%;}.point-one {left: 0;top: 80px;}.point-two {left: 35%;top: 150px;}.point-three {left: 70%;}.point-hidden-text {display: none;opacity: 0;position: absolute;width: 240px;color: #fff;left: 40px;top: -10px;transition: .2s;}@keyframes anim-opacity {0% {opacity: 0;}100% {opacity: 1;}}.point-border:hover .point-hidden-text {display: block;opacity: 1;animation: anim-opacity .2s;}.header-point-block {position: relative;}.header-point-block a {position: absolute;}@media(max-width:1220px) {.header-content .col-9{-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}}@media(max-width:991px) {.header-top-centre .col-2 {-webkit-box-flex: 0;-ms-flex: 0 0 35%;flex: 0 0 35%;max-width: 35%;}.header-top-centre .col-9 {-webkit-box-flex: 0;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}.header-top-centre .col-1 {-webkit-box-flex: 0;-ms-flex: 0 0 15%;flex: 0 0 15%;max-width: 15%;}.header-tel {margin-top: 6px;}.header-point-block {margin-top: 20px;}}@media(max-width:580px) {.header-title {font-size: 36px !important;}.header-text {font-size: 18px;}.header-content {top: 18%;}.header-point, .header-btn {bottom: 10%;}}@media(max-width:480px) {.header-tel {margin-top: 0;}.header-title {font-size: 24px !important;margin-bottom: 20px;}.header-text {font-size: 16px !important;}.tel-number-icon {display: block;}.btn-yellow {font-size: 16px;padding: 13px 30px;}.header-top-centre .col-2 {-webkit-box-flex: 0;-ms-flex: 0 0 45%;flex: 0 0 45%;max-width: 45%;}.header-top-centre .col-9 {-webkit-box-flex: 0;-ms-flex: 0 0 40%;flex: 0 0 40%;max-width: 40%;}.tel-number {display: none;}.header-top {padding: 20px 0 0;}section.header-content {z-index: 9;}.point-three {top: 100px !important;}}@media(max-width:340px) {.header-point-block {padding: 20px 0;}.point-one, .point-three {top: auto !important;}.point-two {top: 40px;}}.modal-none {visibility: hidden;opacity: 0;z-index: -1000;}.maingrid {margin: 0 auto;padding: 0;max-width: 1200px;}.container {width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;}.row {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;}.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;}.col-1 {-webkit-box-flex: 0;-ms-flex: 0 0 8.333333%;flex: 0 0 8.333333%;max-width: 8.333333%;}.col-2 {-webkit-box-flex: 0;-ms-flex: 0 0 16.666667%;flex: 0 0 16.666667%;max-width: 16.666667%;}.col-3 {-webkit-box-flex: 0;-ms-flex: 0 0 25%;flex: 0 0 25%;max-width: 25%;}.col-4 {-webkit-box-flex: 0;-ms-flex: 0 0 33.333333%;flex: 0 0 33.333333%;max-width: 33.333333%;}.col-5 {-webkit-box-flex: 0;-ms-flex: 0 0 41.666667%;flex: 0 0 41.666667%;max-width: 41.666667%;}.col-6 {-webkit-box-flex: 0;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}.col-7 {-webkit-box-flex: 0;-ms-flex: 0 0 58.333333%;flex: 0 0 58.333333%;max-width: 58.333333%;}.col-8 {-webkit-box-flex: 0;-ms-flex: 0 0 66.666667%;flex: 0 0 66.666667%;max-width: 66.666667%;}.col-9 {-webkit-box-flex: 0;-ms-flex: 0 0 75%;flex: 0 0 75%;max-width: 75%;}.col-10 {-webkit-box-flex: 0;-ms-flex: 0 0 83.333333%;flex: 0 0 83.333333%;max-width: 83.333333%;}.col-11 {-webkit-box-flex: 0;-ms-flex: 0 0 91.666667%;flex: 0 0 91.666667%;max-width: 91.666667%;}.col-12 {-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}.col-1 img, .col-2 img, .col-3 img, .col-4 img, .col-5 img, .col-6 img, .col-7 img, .col-8 img, .col-9 img, .col-10 img, .col-11 img, .col-12 img {width: 100%;height: auto;}.display-flex {display: flex;}@media(max-width:1024px) {.maingrid {max-width: 95%;}}@media(max-width:991px) {.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {-webkit-box-flex: 0;-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}}</style>
+</head>
+<body>
+    <header>
+        <section class="header-top">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row header-top-centre">
+                        <div class="col-2">
+                            <div class="header-logo">
+                                <picture>
+                                    <source srcset="img/logo.webp" type="image/webp">
+                                    <img src="img/logo.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="header-tel">
+                                <a href="tel:+79098230013" class="tel-number">+7 (909) 823-00-13</a>
+                                <a href="tel:+79098230013" class="tel-number-icon"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="menu-btn-block">
+                                <button class="menu-btn">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-content">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9">
+                            <h1 class="header-title">Столешницы из искусственного камня от производителя</h1>
+                            <div class="header-text">
+                                <p>Не знаете точных размеров столешницы?</p>
+                                <p>Наш замерщик приедет с образцами и поможет.</p>
+                                <p><span class="text-yellow">Это бесплатно!</span></p>
+                            </div>
+                            <a href="#" class="btn-yellow" data-modal-id="modal-window-zamer">Записаться на замер</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-point">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-point-block">
+                                <a href="#calculate" class="point-one anchor">
+                                    <div class="point-border">
+                                        <div class="point-white"></div>
+                                        <div class="point-hidden-text">
+                                            <span>Бесплатная доставка и сборка</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#materials" class="point-two anchor">
+                                    <div class="point-border">
+                                        <div class="point-white"></div>
+                                        <div class="point-hidden-text">
+                                            <span>Расчет стоимости за 10 минут</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#work" class="point-three anchor">
+                                    <div class="point-border">
+                                        <div class="point-white"></div>
+                                        <div class="point-hidden-text">
+                                            <span>С гарантией 3 года!</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header-btn">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="scroll-btn-block">
+                                <button type="button" class="scroll_down" id="scroll_down"></button>
+                                <span class="scroll-btn-text">Листайте</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <a name="calculate"></a>
+        <section class="calculate">
+            <div class="maingrid calculate-prev">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="calculate-info">
+                                <div class="calculate-info-title">
+                                    <h2 class="content-title-black">Подберите себе столешницу и узнайте её стоимость <span class="text-no-wrap">ответив на</span></h2>
+                                    <h2 class="content-title-normal">5 простых вопросов</h2>
+                                </div>
+                                <p>После прохождения теста вы получите:</p>
+                                <ol>
+                                    <li>Расчет стоимости столешницы по вашим параметрам</li>
+                                    <li><span class="text-yellow">Скидку в 10%</span> на установку</li>
+                                </ol>
+                                <a href="#" class="btn-calculate-prev btn-yellow" data-modal-id="modal-window-calc">Пройти тест</a>
+                                <span class="small-text">Прохождения теста займет 1 минуту</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="calculate-img">
+                                <div class="yellow-border-img">
+                                    <picture>
+                                        <source srcset="img/calculate-bg.webp" type="image/webp">
+                                        <img src="img/calculate-bg.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="materials"></a>
+        <section class="materials">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="materials-title">
+                                <h2 class="content-title-black">Наши приемы, увеличивающие</h2><br>
+                                <h2 class="content-title-normal">срок эксплуатации на 10 лет</h2>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="materials-content">
+                                <div class="materials-img">
+                                    <picture>
+                                        <source srcset="img/materials-3.webp" type="image/webp">
+                                        <img src="img/materials-3.png" alt="">
+                                    </picture>
+                                    <div class="append-dots"></div>
+                                </div>
+                                <div id="material-slider">
+                                    <div class="materials-text">
+                                        <div class="materials-text-img">
+                                            <picture>
+                                                <source srcset="img/mat-block/mat-block-1.webp" type="image/webp">
+                                                <img src="img/mat-block/mat-block-1.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="materials-text-content">
+                                            <p>Используем многослойную ФК-фанеру вместо дешевого ДСП. Фанера обладает большой стойкостью к влажности, что исключает ее разбухание, даже в случае попадания воды на подложку.</p>
+                                        </div>
+                                    </div>
+                                    <div class="materials-text">
+                                        <div class="materials-text-img">
+                                            <picture>
+                                                <source srcset="img/mat-block/mat-block-2.webp" type="image/webp">
+                                                <img src="img/mat-block/mat-block-2.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="materials-text-content">
+                                            <p>Мы не кроим изделие из лоскутков и минимизируем количество швов. Это гарантирует защиту от расхождения швов в процессе эксплуатации изделия.</p>
+                                        </div>
+                                    </div>
+                                    <div class="materials-text">
+                                        <div class="materials-text-img">
+                                            <picture>
+                                                <source srcset="img/mat-block/mat-block-3.webp" type="image/webp">
+                                                <img src="img/mat-block/mat-block-3.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="materials-text-content">
+                                            <p>Под всеми конструктивными стыками и в углах вырезов устанавливаются специальные каменные замки, которые защищают изделие от появления трещин и швов.</p>
+                                        </div>
+                                    </div>
+                                    <div class="materials-text">
+                                        <div class="materials-text-img">
+                                            <picture>
+                                                <source srcset="img/mat-block/mat-block-4.webp" type="image/webp">
+                                                <img src="img/mat-block/mat-block-4.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                        <div class="materials-text-content">
+                                            <p>Под всеми конструктивными стыками и в углах вырезов устанавливаются специальные каменные замки Мы последовательно стачиваем микронеровности рельефа, что существенно увеличивает стойкость к царапинам.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="append-arrows"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="work"></a>
+        <section class="work">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="work-title">
+                                <h2 class="content-title-black">Наши работы - </h2>
+                                <h2 class="content-title-normal">наша гордость</h2>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="work-content">
+                                <div id="work-slider">
+                                    <div>
+                                        <div class="work-content-block">
+                                            <div class="work-content-img">
+                                                <picture>
+                                                    <source srcset="img/work/work-1.webp" type="image/webp">
+                                                    <img src="img/work/work-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="work-content-text">
+                                                <h3 class="work-content-title">Кухня санрайз 1</h3>
+                                                <p><strong>Фасад:</strong> МДФ в декорпленке</p>
+                                                <p><strong>Покрытие:</strong> Матовое, глянцевое</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Мойка:</strong> Встроенная</p>
+                                                <p><strong>Стоимость кухни:</strong> 65 000 руб.</p>
+                                                <a href="#" class="btn-calculate-prev btn-yellow" data-modal-id="modal-window-calc">Рассчитать<span class="mobil-none"> стоимость</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="work-content-block">
+                                            <div class="work-content-img">
+                                                <picture>
+                                                    <source srcset="img/work/work-2.webp" type="image/webp">
+                                                    <img src="img/work/work-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="work-content-text">
+                                                <h3 class="work-content-title">Кухня санрайз 2</h3>
+                                                <p><strong>Фасад:</strong> МДФ в декорпленке</p>
+                                                <p><strong>Покрытие:</strong> Матовое, глянцевое</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Мойка:</strong> Встроенная</p>
+                                                <p><strong>Стоимость кухни:</strong> 65 000 руб.</p>
+                                                <a href="#" class="btn-calculate-prev btn-yellow" data-modal-id="modal-window-calc">Рассчитать<span class="mobil-none"> стоимость</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="work-content-block">
+                                            <div class="work-content-img">
+                                                <picture>
+                                                    <source srcset="img/work/work-3.webp" type="image/webp">
+                                                    <img src="img/work/work-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="work-content-text">
+                                                <h3 class="work-content-title">Кухня санрайз 3</h3>
+                                                <p><strong>Фасад:</strong> МДФ в декорпленке</p>
+                                                <p><strong>Покрытие:</strong> Матовое, глянцевое</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Мойка:</strong> Встроенная</p>
+                                                <p><strong>Стоимость кухни:</strong> 65 000 руб.</p>
+                                                <a href="#" class="btn-calculate-prev btn-yellow" data-modal-id="modal-window-calc">Рассчитать<span class="mobil-none"> стоимость</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="work-content-block">
+                                            <div class="work-content-img">
+                                                <picture>
+                                                    <source srcset="img/work/work-4.webp" type="image/webp">
+                                                    <img src="img/work/work-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="work-content-text">
+                                                <h3 class="work-content-title">Кухня санрайз 4</h3>
+                                                <p><strong>Фасад:</strong> МДФ в декорпленке</p>
+                                                <p><strong>Покрытие:</strong> Матовое, глянцевое</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Столешница:</strong> Искусственный камень</p>
+                                                <p><strong>Мойка:</strong> Встроенная</p>
+                                                <p><strong>Стоимость кухни:</strong> 65 000 руб.</p>
+                                                <a href="#" class="btn-calculate-prev btn-yellow" data-modal-id="modal-window-calc">Рассчитать<span class="mobil-none"> стоимость</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="append-arrows-work">
+                                    <div class="slide-count"><span class="current-slide"></span> / <span class="count-slide"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="service"></a>
+        <section class="service">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="service-title">
+                                <h2 class="content-title-black">Исключительный сервис</h2>
+                                <h2 class="content-title-normal">Для наших клиентов</h2>
+                            </div>
+                            <div class="service-content">
+                                <div class="row margin-bottom-30">
+                                    <div class="col-8">
+                                        <div class="design-block design-free-design">
+                                            <div class="design-block-text">
+                                                <img src="img/icon/sketch.svg">
+                                                <h3>Бесплатный дизайн-проект</h3>
+                                                <p>по вашим требованиям в течении 3 часов</p>
+                                                <a href="#" class="btn-yellow" data-modal-id="modal-window-call">Обсудить мой дизайн</a>
+                                            </div>
+                                            <div class="design-block-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="design-block design-free-zamer">
+                                            <div class="design-block-text free-measure-block">
+                                                <img src="img/icon/roulette.svg">
+                                                <h3>Бесплатный замер</h3>
+                                                <p>в удобное для вас время, со всеми образцами цветов</p>
+                                                <div class="three-angle-down">
+                                                    <img src="img/angle-down.svg">
+                                                    <img src="img/angle-down.svg">
+                                                    <img src="img/angle-down.svg">
+                                                </div>
+                                            </div>
+                                            <div class="design-block-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="design-block design-delivery">
+                                            <div class="design-block-text">
+                                                <img src="img/icon/shipped.svg">
+                                                <h3>Доставка и сборка</h3>
+                                                <p>будут для вас абсолютно бесплатными!</p>
+                                            </div>
+                                            <div class="design-block-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="design-block design-guarantee">
+                                            <div class="design-block-text">
+                                                <img src="img/icon/file.svg">
+                                                <h3>Гарантия 3 года</h3>
+                                                <p>на любую нашу кухню</p>
+                                            </div>
+                                            <div class="design-block-bg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="contact-form">
+                                            <form method="post" action="/" class="skibidi-form">
+                                                <input type="hidden" name="action" value="feedback">
+
+                                                <p class="title-form">Записаться на замер</p>
+                                                <span class="text-form">Заполните форму и мы перезвоним для уточнения даты и времени</span>
+
+                                                <input type="text" required name="skibidi-name" placeholder="Имя" >
+                                                <p class="err_message"></p>
+
+                                                <input type="text" required name="skibidi-phone" placeholder="Телефон" >
+                                                <p class="err_message"></p>
+
+                                                <!--<input type="text" name="skibidi-email" placeholder="E-mail" >
+                                                <p class="err_message"></p>
+
+                                                <input type="text" name="skibidi-message" placeholder="Текст сообщения" >
+                                                <p class="err_message"></p>-->
+
+                                                <input type="submit" value="Записаться" class="btn-yellow skibidi-form-submit">
+                                                <div class="skibidiAgree">
+                                                    <div class="skibidiChekboxAgree checked"></div>
+                                                    <div class="skibidiTextAgree">«Нажимая на кнопку Записаться, я даю <a href="docs/soglasie.pdf" target="_blank">согласие на обработку персональных данных</a>»</div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="testimonals"></a>
+        <section class="testimonals">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="testimonals-title">
+                                <h2 class="content-title-black">Реальные отзывы </h2>
+                                <h2 class="content-title-normal">наших клиентов</h2>
+                            </div>
+                            <div class="testimonals-content">
+                                <div id="testimonals-slider">
+                                    <div>
+                                        <div class="testimonals-content-block">
+                                            <div class="testimonals-content-img">
+                                                <picture>
+                                                    <source srcset="img/testi-work/testi-work-1.webp" type="image/webp">
+                                                    <img src="img/testi-work/testi-work-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonals-content-text">
+                                                <div class="testimonals-person">
+                                                    <div class="testimonals-person-img">
+                                                        <picture>
+                                                            <source srcset="img/person/person-1.webp" type="image/webp">
+                                                            <img src="img/person/person-1.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="testimonals-person-name">
+                                                        <h3 class="testimonals-content-title">Елена</h3>
+                                                        <div class="testimonals-star">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonals-massage">
+                                                    <p>С приобретением кухни и тумбы в ванную комнату, мы столкнулись с проблемой выбора фирмы по производству столешниц из иск.камня. Долго искали серьезную фирму, пока случайно не зашли на сайт Оникса. Позвонили туда, договорились о замере, ребята из фирмы оперативно приехали, сделали все нужные замеры и показали образцы. И всего через неделю мастера очень быстро и качественно установили столешницы, сделали необходимые вырезы по бытовую технику, все очень красиво, качественно и аккуратно, мы остались очень довольны! Спасибо вам огромное!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonals-content-block">
+                                            <div class="testimonals-content-img">
+                                                <picture>
+                                                    <source srcset="img/testi-work/testi-work-2.webp" type="image/webp">
+                                                    <img src="img/testi-work/testi-work-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonals-content-text">
+                                                <div class="testimonals-person">
+                                                    <div class="testimonals-person-img">
+                                                        <picture>
+                                                            <source srcset="img/person/person-2.webp" type="image/webp">
+                                                            <img src="img/person/person-2.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="testimonals-person-name">
+                                                        <h3 class="testimonals-content-title">Марина</h3>
+                                                        <div class="testimonals-star">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonals-massage">
+                                                    <p>Всем, собирающимся поменять столешницу, советую обращаться в Оникс. Я давно хотела сменить столешницу, т.к. старая столешница местами раздулась и потеряла вид. Обошла множество магазинов по продаже кухонь, изучила массу сайтов, обзвонила множество фирм. Здесь мне предложили самую адекватную цену, кроме того я смогла посетить цех по производству столешниц. Заказала, приехали в тот же день замерщики с образцами камня, измерили. Заказ исполнили даже раньше обещанного срока. Выглядит просто замечательно. Спасибо большое мастерам, порадовали.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonals-content-block">
+                                            <div class="testimonals-content-img">
+                                                <picture>
+                                                    <source srcset="img/testi-work/testi-work-3.webp" type="image/webp">
+                                                    <img src="img/testi-work/testi-work-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonals-content-text">
+                                                <div class="testimonals-person">
+                                                    <div class="testimonals-person-img">
+                                                        <picture>
+                                                            <source srcset="img/person/person-3.webp" type="image/webp">
+                                                            <img src="img/person/person-3.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="testimonals-person-name">
+                                                        <h3 class="testimonals-content-title">Игорь</h3>
+                                                        <div class="testimonals-star">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonals-massage">
+                                                    <p>Оникс спасибо! Очень сложную конфигурацию и по размеру и по геометрии заказал. Был готов к сюрпризам. Сюрпризом оказалась отлично выполненная работа. Знаю толк в камне и монтаже. Могу сказать, что доволен и ценообразованием и качеством работ и, что не маловажно, замером. В моем случае он имел огромное значение. Сделал следующий заказ. Готов разместить еще фото другого заказа после его изготовления. Буду рекомендовать друзьям и знакомым!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="testimonals-content-block">
+                                            <div class="testimonals-content-img">
+                                                <picture>
+                                                    <source srcset="img/testi-work/testi-work-4.webp" type="image/webp">
+                                                    <img src="img/testi-work/testi-work-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="testimonals-content-text">
+                                                <div class="testimonals-person">
+                                                    <div class="testimonals-person-img">
+                                                        <picture>
+                                                            <source srcset="img/person/person-4.webp" type="image/webp">
+                                                            <img src="img/person/person-4.jpg" alt="">
+                                                        </picture>
+                                                    </div>
+                                                    <div class="testimonals-person-name">
+                                                        <h3 class="testimonals-content-title">Михаил</h3>
+                                                        <div class="testimonals-star">
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonals-massage">
+                                                    <p>Поменял свою старую столешницу на новую, менеджер все доступно объяснил, рассказал про разные виды искусственных камней, предложил встроить в столешницу мойку. Результатом доволен, место стыка столешниц найти так и не смог. После установщиков не осталось даже пыли на полу. Спасибо. Все мастера - настоящие специалисты своего дела, рекомендую!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="append-arrows-testimonals">
+                                    <div class="slide-count-testi"><span class="current-slide-testi"></span> / <span class="count-slide-testi"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="reason"></a>
+        <section class="reason">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="reason-title">
+                                <h2 class="content-title-black">7 причин</h2>
+                                <h2 class="content-title-normal">вызвать замерщика на дом</h2>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="reason-content">
+                                <ol>
+                                    <li><span>Бесплатный выезд</span></li>
+                                    <li><span>Бесплатный замер, точно и без ошибок</span></li>
+                                    <li><span>Бесплатный проект, продуманный и фукнциональный</span></li>
+                                    <li><span>Подъедем в удобное для вас время</span></li>
+                                    <li><span>Замерщик привезет все образцы материалов и цветов</span></li>
+                                    <li><span>Дизайнер расчитает точную стоимость кухни</span></li>
+                                    <li><span>Договор можно заключить не выходя из дома</span></li>
+                                </ol>
+                                <a href="#" class="btn-yellow" data-modal-id="modal-window-zamer">Вызвать замерщика</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="reason-img">
+                                <div class="yellow-border-img">
+                                    <picture>
+                                        <source srcset="img/reason-bg.webp" type="image/webp">
+                                        <img src="img/reason-bg.jpg" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="guarantee"></a>
+        <section class="guarantee">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="guarantee-content">
+                                <h2>Гарантия выполнения всех сроков по договору</h2>
+                                <p>Благодаря собственному производству, грамотной логистике и своевременной поставке материалов и фурнитуры</p>
+                                <a href="docs/dogovor.odt" class="btn-yellow">Скачать пример договора</a>
+                                <span>Менеджер перезвонит вам в течение 5 минут в рабочее время для уточнения деталей и вышлет пример договора на изготовления столешницы</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="guarantee-img">
+                                <picture>
+                                    <source srcset="img/guarantee-page.webp" type="image/webp">
+                                    <img src="img/guarantee-page.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="feedback"></a>
+        <section class="feedback">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="feedback-content">
+                                <h2 class="content-title-black">С нами легко связаться</h2>
+                                <span>и комфортно общаться любым способом</span>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="feedback-content-contact">
+                                            <div class="feedback-contact-title">
+                                                <p>Наш телефон</p>
+                                            </div>
+                                            <div class="feedback-contact-text">
+                                                <a href="tel:+79098230013">8 (909) 823-00-13</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feedback-content-contact">
+                                            <div class="feedback-contact-title">
+                                                <p>Время работы</p>
+                                            </div>
+                                            <div class="feedback-contact-text">
+                                                <a href="#" class="pointer-events-none">с 09:00 - 18:00</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feedback-content-contact">
+                                            <div class="feedback-contact-title">
+                                                <p>Наш e-mail</p>
+                                            </div>
+                                            <div class="feedback-contact-text">
+                                                <a href="mailto:onix-korrian@mail.ru">onix-korrian@mail.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feedback-content-contact">
+                                            <div class="feedback-contact-title">
+                                                <p>Связаться в один клик</p>
+                                            </div>
+                                            <div class="feedback-contact-text">
+                                                <div class="feedback-icon">
+                                                    <a href="https://api.whatsapp.com/send?phone=89141903904" target="_blank"><img src="img/whatsapp.svg" alt=""></a>
+                                                    <a href="#"><img src="img/telegram.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feedback-link">
+                                <h3>Остались вопросы?</h3>
+                                <p>Наш специалист оперативно свяжется с вами и проконсультирует по всем вопроса!</p>
+                                <div class="three-angle-down">
+                                    <img src="img/angle-down.svg">
+                                    <img src="img/angle-down.svg">
+                                    <img src="img/angle-down.svg">
+                                </div>
+                                <a href="#" class="btn-yellow" data-modal-id="modal-window-call">Заказать звонок</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="maingrid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="footer-menu">
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#calculate" class="anchor">Подбор столешницы</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#materials" class="anchor">Увеличение срока эксплуатации</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#work" class="anchor">Наши работы</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#service" class="anchor">Исключительный сервис</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#testimonals" class="anchor">Отзывы</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#reason" class="anchor">7 причин вызвать замерщика</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#guarantee" class="anchor">Гарантия выполнения сроков</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                <a href="#feedback" class="anchor">Обратная связь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="maingrid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="copy-name">
+                                <p>&copy; <script type="text/javascript">var footerDate = new Date(); document.write(footerDate.getFullYear());</script> Оникс</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="studio">
+                                <span>Разработка сайта - <span style="color:#fff;">Skibidi</span><span class="black">Production</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="scroller" class="toTop fa fa-chevron-up"></a>
+    <div id="modal-window-call" class="modal-window-call modal-none">
+        <div class="modal-window-msg">
+            <div class="modal-window-content">
+                <form method="post" action="/" class="skibidi-form">
+                    <p class="title-form"><span>Обратный звонок</span></p>
+                    <input type="text" required="required" name="skibidi-name" placeholder="Имя">
+                    <p class="err-message"></p>
+                    <input type="text" required="required" name="skibidi-phone" placeholder="Телефон">
+                    <p class="err-message"></p>
+                    <input type="submit" value="Отправить" class="btn-yellow skibidi-form-submit">
+                    <div class="skibidiAgree">
+                        <div class="skibidiChekboxAgree checked"></div>
+                        <div class="skibidiTextAgree">«Нажимая на кнопку ОТПРАВИТЬ, я даю <a href="docs/soglasie.pdf" target="_blank">согласие на обработку персональных данных</a>»</div>
+                    </div>
+                </form>
+                <a class="modal-window-close">&#215;</a>
+            </div>
+        </div>
+    </div>
+    <div id="modal-window-zamer" class="modal-window-call modal-none">
+        <div class="modal-window-msg">
+            <div class="modal-window-content">
+                <form method="post" action="/" class="skibidi-form">
+                    <p class="title-form"><span>Вызвать замерщика</span></p>
+                    <input type="text" required="required" name="skibidi-name" placeholder="Имя">
+                    <p class="err-message"></p>
+                    <input type="text" required="required" name="skibidi-phone" placeholder="Телефон">
+                    <p class="err-message"></p>
+                    <input type="submit" value="Отправить" class="btn-yellow skibidi-form-submit">
+                    <div class="skibidiAgree">
+                        <div class="skibidiChekboxAgree checked"></div>
+                        <div class="skibidiTextAgree">«Нажимая на кнопку ОТПРАВИТЬ, я даю <a href="docs/soglasie.pdf" target="_blank">согласие на обработку персональных данных</a>»</div>
+                    </div>
+                </form>
+                <a class="modal-window-close">&#215;</a>
+            </div>
+        </div>
+    </div>
+    <div id="modal-window-menu" class="modal-window-call modal-none">
+        <div class="modal-window-menu-block">
+            <ul class="ul-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="modal-window-calc" class="modal-window-call modal-none">
+        <div class="wrapper-block">
+            <div class="modal-window-msg modal-window-msg-calc">
+            <div class="modal-window-content">
+                <div class="maingrid calculate-content">
+                </div>
+                <a class="modal-window-close">&#215;</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css" />
+    <script src="js/slick.js"></script>
+    <script>
+        $("#material-slider").slick({
+            dots: true,
+            infinite: true,
+            speed: 400,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: false,
+            autoplaySpeed: 6000,
+            appendDots: $('.append-dots'),
+            appendArrows: $('.append-arrows'),
+            nextArrow: '<div class="slider-arrow arrow-left"><i class="fas fa-angle-double-right"></i></div>',
+            prevArrow: '<div class="slider-arrow arrow-right"><i class="fas fa-angle-double-left"></i></div>'
+        });
+
+        $("#work-slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 400,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: false,
+            autoplaySpeed: 6000,
+            appendArrows: $('.append-arrows-work'),
+            nextArrow: '<div class="slider-arrow arrow-left"><i class="fas fa-angle-double-right"></i></div>',
+            prevArrow: '<div class="slider-arrow arrow-right"><i class="fas fa-angle-double-left"></i></div>'
+        });
+
+        $("#testimonals-slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 400,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: false,
+            autoplaySpeed: 6000,
+            appendArrows: $('.append-arrows-testimonals'),
+            nextArrow: '<div class="slider-arrow arrow-left"><i class="fas fa-angle-double-right"></i></div>',
+            prevArrow: '<div class="slider-arrow arrow-right"><i class="fas fa-angle-double-left"></i></div>'
+        });
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/adaptation.css">
+    <script src="js/main.js"></script>
+</body>
+</html>
